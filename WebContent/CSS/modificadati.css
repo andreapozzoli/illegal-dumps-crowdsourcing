@@ -1,0 +1,202 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	padding: 10px;
+	background: #e6e6e6;
+}
+
+/* Header/Blog Title */
+.header {
+	padding: 30px;
+	text-align: center;
+	background: white;
+	border-radius: 40px 40px 0px 0px;
+	box-shadow: 20px 20px 20px #808080;
+}
+
+.header h1 {
+	font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+	border-radius: 0px 0px 40px 40px;
+	box-shadow: 20px 20px 20px #808080;
+}
+
+/* Style the topnav links */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+	float: left;
+	width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+	float: left;
+	width: 25%;
+	background-color: none;
+	padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 40px 40px 40px 40px;
+	box-shadow: 20px 20px 20px #808080;
+}
+
+.card input, select{
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom:1px solid black;
+    height: 30px;
+
+}
+.card input[type="text"], input[type="password"], input[type="file"], select/* i css si riferiscono solo alla barra ditesto */
+{
+	border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.card label{
+	font-size:1.2em;
+}
+.card input[type="submit"]{  /* i css si riferiscono solo al pulsante */
+	border-radius: 14px;
+	height: 40px;
+}
+
+.card input[type="submit"]:hover {
+	background: lightblue;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Footer */
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* Style the form */
+
+/* Hide all steps by default: */
+.tab {
+	display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbbbbb;
+	border: none;
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+	opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+	background-color: #4CAF50;
+}
+
+.invalid {
+	border: 2px solid red;
+}
+
+.nascosto {
+	display: none;
+}
+
+.visibile {
+	display: block;
+}
+
+.even {
+	background: #e6e6e6;
+}
+td, th{
+	text-align: left;
+	width: 180px;
+}
+th{
+	border-bottom: 1px solid black;
+}
+
+p.err, p.err1, p.err2 {
+	border-bottom: 1px solid #ff0000;
+	font-size: 15px;
+	height: auto;
+	padding: 5px;
+	width: 268px;
+	color: red;
+	margin: auto; background-color : none;
+	text-align: center;
+	padding-left: 15px;
+	background-color: none;
+	display: none;
+}
+
+input[type="file"]{
+width:30%;
+height:auto;
+}

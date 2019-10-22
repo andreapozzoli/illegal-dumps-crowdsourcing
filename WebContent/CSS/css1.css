@@ -1,0 +1,98 @@
+/*contenitore in cima dove c'è scritto "Login"*/
+.pre_contenitore{
+	  width:400px;
+	 margin-left:60px;
+	 margin-top:20px;
+
+	  height:50px;
+	  border:1px solid black;
+	  border-radius: 40px 40px 0px 0px;
+	   background-color:rgba(0,0,0,0.9);
+	   box-shadow: 20px 30px 20px #000000;
+	   padding:20px;
+}
+
+h1{ color:white;
+     text-align: center;
+     font-family: arial;
+     }
+     
+.pre_contenitore h2{
+     color:white;
+     text-align: center;
+     font-size: 1.9em;
+     font-family: arial;
+    line-height:2px;
+
+}
+
+
+body{
+	background-image: url("sfondo.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+}
+
+/*contenitore contenete il form */
+
+.contenitore {
+	  border:1px solid black;
+	 margin-left:60px;
+	  width: 400px;
+      height: auto;
+      border-radius: 0px 0px 40px 40px;
+      padding:20px;
+      background-color:rgba(0,0,0,0.8);
+      box-shadow: 20px 20px 20px #000000;
+     
+      color:white;
+
+}
+
+.contenitore input{
+    width: 100%;
+    margin-bottom: 20px;
+    border:none;
+    border:1px solid black;
+    height: 30px;
+
+}
+.contenitore input[type="text"], input[type="password"] /* i css si riferiscono solo alla barra ditesto */
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contenitore label{
+	font-size:1.2em;
+}
+.contenitore input[type="submit"]{  /* i css si riferiscono solo al pulsante */
+	border-radius: 14px;
+	height: 40px;
+}
+
+.contenitore input[type="submit"]:hover {
+	background: lightblue;
+}
+
+p.err, p.err1 {
+	border-bottom: 1px solid #ff0000;
+	font-size: 15px;
+	height: auto;
+	padding: 5px;
+	width: 268px;
+	color: red;
+	margin: auto; background-color : none;
+		text-align: center;
+	
+	padding-left: 15px;
+	background-color: none;
+	display: none;
+}
